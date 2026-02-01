@@ -100,9 +100,7 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button variant="primary" className="!py-2.5 !px-6 text-sm !rounded-lg">
-            Falar com especialista
-          </Button>
+          <a href='https://wa.me/5551998753027?text=Olá,%20gostaria%20de%20mais%20informações'><Button variant="primary" className="!py-2.5 !px-6 text-sm !rounded-lg">Falar com especialista</Button></a>
         </div>
 
         {/* Mobile Toggle */}
@@ -169,11 +167,8 @@ const Hero = () => {
               Criamos sites, landing pages e automações inteligentes com foco em conversão, performance e crescimento real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button>
-                Falar com um especialista
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="secondary">Ver soluções</Button>
+            <a href='https://wa.me/5551998753027?text=Olá,%20gostaria%20de%20mais%20informações'><Button>Falar com um especialista<ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" /></Button></a>
+              <a href='#solucoes'><Button variant="secondary">Ver soluções</Button></a>
             </div>
           </FadeIn>
         </div>
@@ -329,9 +324,9 @@ const Services = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
                     <p className="text-[#B5B8C5] leading-relaxed mb-4">{service.desc}</p>
-                    <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-[#2F6BFF] transition-colors">
+                    {/* <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-[#2F6BFF] transition-colors">
                       Saiba mais <ChevronRight size={14} className="ml-1" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </FadeIn>
@@ -424,8 +419,7 @@ const CTA = () => {
               Vamos conversar sobre o seu projeto e entender como a tecnologia pode trabalhar a favor do seu crescimento.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="w-full sm:w-auto">Solicitar proposta</Button>
-              <Button variant="secondary" className="w-full sm:w-auto">Agendar conversa</Button>
+              <a href='https://wa.me/5551998753027?text=Olá,%20gostaria%20de%20mais%20informações'><Button className="w-full sm:w-auto">Solicitar proposta</Button></a>
             </div>
           </div>
         </div>
@@ -444,9 +438,8 @@ const Footer = () => {
 </a>
           
           <div className="flex gap-8 text-sm text-[#B5B8C5]">
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="hover:text-white transition-colors">Email</a>
+            <a href="https://www.instagram.com/zynishub/" className="hover:text-white transition-colors">Instagram</a>
+            <a href="mailto:zynishub@gmail.com" className="hover:text-white transition-colors">Email</a>
           </div>
         </div>
         <div className="mt-8 text-center md:text-left text-xs text-[#525560]">
