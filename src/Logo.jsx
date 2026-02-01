@@ -81,6 +81,6 @@ export const LogoOption3 = ({ className = "w-8 h-8", showText = false }) => (
 // LogoOption1 = Fundo Quadrado Gradiente
 // LogoOption2 = Linhas Minimalistas
 // LogoOption3 = Setas Abstratas
-const Logo = LogoOption2; 
+const Logo = LogoOption1; 
 
 export default Logo;
