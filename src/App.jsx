@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from './Logo';
 import { 
   ArrowRight, 
   Menu, 
@@ -81,11 +82,8 @@ const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 z-50">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2F6BFF] to-[#6C5CE7] flex items-center justify-center">
-            <span className="font-bold text-white text-lg">Z</span>
-          </div>
-          <span className="text-2xl font-bold text-white tracking-tight">Zynis Hub</span>
-        </a>
+   <Logo className="w-8 h-8" showText={true} />
+</a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
@@ -441,12 +439,9 @@ const Footer = () => {
     <footer className={`py-12 border-t border-[#2F333B] ${COLORS.bg}`}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-[#2F6BFF] flex items-center justify-center">
-              <span className="font-bold text-white text-xs">Z</span>
-            </div>
-            <span className="text-lg font-bold text-white">Zynis Hub</span>
-          </div>
+        <a href="#" className="flex items-center gap-2 z-50">
+   <Logo className="w-8 h-8" showText={true} />
+</a>
           
           <div className="flex gap-8 text-sm text-[#B5B8C5]">
             <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
